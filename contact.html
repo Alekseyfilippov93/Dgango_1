@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+    <style>
+        .sidebar {
+            width: 250px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+<div class="d-flex vh-100">
+
+    <nav class="sidebar bg-dark text-white p-3">
+        <h3 class="mb-4 text-primary">B Меню</h3>
+        <hr class="text-secondary">
+
+        <ul class="nav flex-column mb-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link text-white">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a href="catalog.html" class="nav-link text-white">Категории</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Заказы</a>
+            </li>
+            <li class="nav-item">
+                <a href="contacts.html" class="nav-link text-white active bg-primary" aria-current="page">Контакты</a>
+            </li>
+        </ul>
+
+        <div class="mt-auto pt-3 border-top border-secondary">
+            <a href="#" class="d-block text-white text-decoration-none dropdown-toggle">
+                Пользователь
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow-1 p-5 overflow-auto">
+        <h1 class="mb-5 text-center">Контакты</h1>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm border-0">
+
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Почта</label>
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input type="email" class="form-control" id="emailInput" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="messageTextarea" class="form-label">Сообщение</label>
+                        <textarea class="form-control" id="messageTextarea" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 ps-md-5">
+                <h2 class="mb-4">Наши контакты</h2>
+                <p class="text-secondary"> Можно написать про компанию</p>
+            </div>
+
+        </div>
+    </main>
+
+</div>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
